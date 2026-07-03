@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">💰 Expense Tracker Pro</h1>
+            <p class="tagline">Track your finances with ease</p>
+        </div>
+    </header>
+    <div class="container">
+        <button class="reset">Reset All</button>
+        <div class="Entries">
+            <div class="balance">
+                <label for="balance">BALANCE</label>
+                <input type="text" id="balance" placeholder="0" disabled="true">
+            </div>
+            <div class="calculate">
+                <div class="i">
+                    <label for="income">Total Income</label>
+                    <input type="text" id="income" placeholder="0">
+                </div>
+                <div class="e">
+                    <label for="Expense">Total Expense</label>
+                    <input type="text" id="Expense" placeholder="0" disabled="true">
+                </div>
+            </div>
+        </div>
+        <div class="Two">
+            <div class="Expense">
+                <div class="divide">
+                    <div class="divide-header">
+                        <p>S.no</p>
+                        <p>Name</p>
+                        <p>Amount</p>
+                        <p>Date</p>
+                        <p>Delete</p>
+                    </div>
+                    <div class="entries-list">
+                        <!-- Entries will be added here -->
+                    </div>
+                </div>
+            </div>
+            <div class="add-new">
+                <div class="all">
+                    <div class="form-group">
+                        <label for="entryType">Entry Type</label>
+                        <select id="entryType">
+                            <option>Expense</option>
+                            <option>Rent</option>
+                            <option>Bills</option>
+                            <option>Food</option>
+                            <option>Luxury</option>
+                            <option>Budget</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" placeholder="Enter amount">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <button id="addButton">Add Entry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
