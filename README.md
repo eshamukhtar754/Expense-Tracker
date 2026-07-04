@@ -21,10 +21,6 @@ A modern and responsive Expense Tracker application built with HTML, CSS, and Ja
 - JavaScript (ES6)
 - Local Storage API
 
-## 📷 Screenshots
-
-> Add screenshots here
-
 ## 🚀 How to Run
 
 1. Open the project folder.
